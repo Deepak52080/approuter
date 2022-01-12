@@ -1,0 +1,17 @@
+{   
+    "authenticationMethod": "none",
+    "welcomeFile": "/ui/index.html",
+    "routes": [
+        {
+            "source": "^/java/(.*)$",
+            "target": "/$1",
+            "destination": "spring-music"
+        },
+        {
+            "source": "^/ui/(.*)$",
+            "target": "$1",
+            "localDir": "resources/webapp"
+        }
+    ]
+
+}
